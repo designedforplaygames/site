@@ -1,0 +1,15 @@
+title: "designed for play™"
+author: johnson earls
+email: designedforplaygames@gmail.com
+description: >-
+  designed for play™ is a one-person game studio.
+
+# social links
+twitter_username: designedforplay
+github_username:  designedforplaygames
+
+show_excerpts: true # set to false to remove excerpts on the homepage
+
+theme: minima
+
+timezone: America/Los_Angeles
