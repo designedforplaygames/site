@@ -1,0 +1,10 @@
+---
+title: "spods™ initial design"
+date: 2013-01-13 19:29
+---
+
+![spods™ logo]({{ site.url }}/assets/spods_logo.png)
+
+Finished the initial design and a prototype version of spods™.  Need to reprint the prototype to lighten up some of the colors and rework to the style I ended up with after a weekend of playing around, then need to schedule a playtest.
+
+![spods™ tile]({{ site.url }}/assets/spods_tile.png)
