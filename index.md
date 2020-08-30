@@ -1,6 +1,11 @@
 ---
 title: about
 ---
+
+![Under Construction!]({{ "/" | relative_url }}/assets/underconstruction.png){:height="100"}
+
+Site is being migrated!  Please pardon the lack of anything here!
+
 _**designed for play**_&trade; is a one-person game studio.  i currently have one game (self-)published, with several more either in testing or in the idea stage.
 
 [@designedforplay](https://twitter.com/designedforplay)  
