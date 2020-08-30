@@ -1,6 +1,6 @@
 ---
 title: "Danny Amoeba™ at Paramecium High - more playtests"
-date: 2013-01-13
+date: 2013-01-13 19:14
 ---
 Wow, this is only my second post and already I'm behind!
 
