@@ -4,7 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{%- if site.masthead.image -%}<img src="{{ site.masthead.image | relative_url }}"{% if site.masthead.width %} width="{{ site.masthead.width }}"{% endif %}{% if site.masthead.height %} height="{{ site.masthead.height }}"{% endif %}/>{%- endif -%}{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{%- if site.masthead.image -%}<img src="{{ site.masthead.image | relative_url }}"{% if site.masthead.width %} width="{{ site.masthead.width }}"{% endif %}{% if site.masthead.height %} height="{{ site.masthead.height }}"{% endif %}/>{%- endif -%}{%- if not site.masthead.image or site.masthead.include_title -%}{{ site.title | escape }}{%- endif -%}</a>
 
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
