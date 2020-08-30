@@ -2,7 +2,7 @@
 title: about
 ---
 
-![Under Construction!]({{ "/" | relative_url }}/assets/underconstruction.png){:height="100"}
+![Under Construction!]({{ "/assets/underconstruction.png" | relative_url }}){:height="100"}
 
 Site is being migrated!  Please pardon the lack of anything here!
 

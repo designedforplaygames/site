@@ -3,5 +3,5 @@ title: "..."
 date: YYYY-MM-DD HH:MM
 ---
 ...
-![image alt text](assets/image_filename.png){:height="yyy" width="xxx"}
+![image alt text]({{ "/assets/image_filename.png | relative_url}}){:height="yyy" width="xxx"}
 ...
