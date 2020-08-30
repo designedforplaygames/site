@@ -19,3 +19,6 @@ timezone: America/Los_Angeles
 
 minima:
   date_format: "%Y %B %-d %H:%M %Z"
+
+kramdown:
+  parse_block_html: true
