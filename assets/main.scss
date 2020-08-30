@@ -1,0 +1,7 @@
+---
+---
+@import "minima";
+.row:after { content: ""; display: table; clear: both; }
+.columns.two { float: "left"; width: "50%" }
+.columns.three { float: "left"; width: "33%" }
+.columns.four { float: "left"; width: "25%" }
