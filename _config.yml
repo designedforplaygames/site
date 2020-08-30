@@ -19,3 +19,5 @@ timezone: America/Los_Angeles
 
 minima:
   date_format: "%Y %B %-d %H:%M %Z"
+
+verbose: true
