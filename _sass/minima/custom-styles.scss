@@ -1,0 +1,4 @@
+.row:after div { content: ""; display: table; clear: both; }
+.2column div { float: "left", width: "50%" }
+.3column div { float: "left", width: "33%" }
+.4column div { float: "left", width: "25%" }
