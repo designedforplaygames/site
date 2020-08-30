@@ -16,3 +16,6 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 theme: minima
 
 timezone: America/Los_Angeles
+
+minima:
+  date_format: "%Y-%m-%d %H:%M %Z"
