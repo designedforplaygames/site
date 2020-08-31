@@ -1,5 +1,5 @@
 <div>
-[_Purchase **{{include.title}}** at The Game Crafter_](https://www.thegamecrafter.com/games/{{include.game.tgc_id}})
+[_{% if include.game.status == "production" %}Purchase{% else %}Preview{% endif %} **{{include.title}}** at The Game Crafter_](https://www.thegamecrafter.com/games/{{include.game.tgc_id}})
 </div>
 <div class="row">
 <div class="two columns">
