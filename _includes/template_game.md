@@ -13,6 +13,9 @@
 | Age | {{page.game.min_age}} + |
 | Time | {{page.game.time_range}} |
 | Type | {{page.game.type}} |
+{% if page.game.status != "production" -%}
+| Status | <span class="{{page.game.status|slugify}}">{{ page.game.status }}</span> |
+{% endif %}
 
 </div>
 <div class="two columns">
