@@ -14,7 +14,7 @@
 | Time | {{page.game.time_range}} |
 | Type | {{page.game.type}} |
 {% if page.game.status != "production" -%}
-| Status | <span class="{{page.game.status|slugify}}">{{ page.game.status }}</span> |
+| Status | <span class="status {{page.game.status|slugify}}">{{ page.game.status }}</span> |
 {% endif %}
 
 </div>
