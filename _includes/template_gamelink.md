@@ -1,11 +1,11 @@
 <div class="row">
 ### [{{include.title}}]({{include.url | relative_url}})
 
-{% if include.game.images.logo != null -%}
+{% if include.game.images.logo.asset != null -%}
 <div style="float:left">
-{: style="margin-right: 10px"}
-![{{include.title}} Logo]({{ include.game.images.logo | relative_url }})
+![{{include.title}}{% if include.game.images.logo.title != null %} {{include.game.images.logo.title}}{% endif %}]({{ include.game.images.logo.asset | relative_url }}){: {% if include.game.images.logo.display_width != null %}width="{{ include.game.images.logo.display_width }}" {% if include.game.images.logo.display_height != null %}height="{{ include.game.images.logo.display_height }}" }
 </div>
+{: style="margin-right: 10px"}
 {% endif -%}
 <div style="float:left">
 
