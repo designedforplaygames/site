@@ -3,7 +3,7 @@
 
 {% if include.game.images.logo.asset != null -%}
 <div style="float:left">
-![{{include.title}}{% if include.game.images.logo.title != null %} {{include.game.images.logo.title}}{% endif %}]({{ include.game.images.logo.asset | relative_url }}){: {% if include.game.images.logo.display_width != null %}width="{{ include.game.images.logo.display_width }}" {% if include.game.images.logo.display_height != null %}height="{{ include.game.images.logo.display_height }}" }
+![{{include.title}}{% if include.game.images.logo.title != null %} {{include.game.images.logo.title}}{% endif %}]({{ include.game.images.logo.asset | relative_url }}){: {% if include.game.images.logo.display_width != null %}width="{{ include.game.images.logo.display_width }}"{% endif %} {% if include.game.images.logo.display_height != null %}height="{{ include.game.images.logo.display_height }}"{% endif %} }
 </div>
 {: style="margin-right: 10px"}
 {% endif -%}
