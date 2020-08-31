@@ -1,5 +1,6 @@
 ---
 game:
+    status: "production"
     tgc_id: "roads-rails-rivers-trails"
     abbr: "rrrt"
     min_players: "2"
