@@ -1,29 +1,38 @@
-{% capture game_action_asset %}assets/{{page.game.abbr}}_action.png{% endcapture %}
-{% capture game_box_asset %}assets/{{page.game.abbr}}_box.png{% endcapture %}
-{% capture game_shop_asset %}assets/{{page.game.abbr}}_shop.png{% endcapture %}
-{% capture game_unboxed_asset %}assets/{{page.game.abbr}}_unboxed.png{% endcapture %}
 <div>
-[_Purchase **{{page.title}}** at The Game Crafter_](https://www.thegamecrafter.com/games/{{page.game.tgc_id}})
+[_Purchase **{{include.title}}** at The Game Crafter_](https://www.thegamecrafter.com/games/{{include.game.tgc_id}})
 </div>
 <div class="row">
 <div class="two columns">
-![{{page.title}} Shop Logo]({{ game_shop_asset | relative_url }})
-
-| Players | {{page.game.min_players}} - {{page.game.max_players}} |
-| Age | {{page.game.min_age}} + |
-| Time | {{page.game.time_range}} |
-| Type | {{page.game.type}} |
-{% if page.game.status != "production" -%}
-| Status | <span class="status {{page.game.status|slugify}}">{{ page.game.status }}</span> |
+{% if include.game.images.logo != null -%}
+![{{include.title}} Shop Logo]({{ include.game.images.logo | relative_url }})
+{% endif %}
+| Players | {{include.game.min_players}} - {{include.game.max_players}} |
+| Age | {{include.game.min_age}} + |
+| Time | {{include.game.time_range}} |
+| Type | {{include.game.type}} |
+{% if include.game.status != "production" -%}
+| Status | <span class="status {{include.game.status|slugify}}">{{ include.game.status }}</span> |
 {% endif %}
 
 </div>
 <div class="two columns">
-![{{page.title}} Box]({{ game_box_asset | relative_url }}){:align="right"}
-{{page.game.blurb}}
+{% if include.game.images.blurb != null -%}
+![{{include.title}} Box]({{ include.game.images.blurb | relative_url }}){:align="right"}
+{% endif -%}
+{{include.game.blurb}}
 </div>
 </div>
 <div class="row">
-![{{page.title}} Unboxing]({{ game_unboxed_asset | relative_url }}){:width="320" align="left"}
-![{{page.title}} Action Shot]({{ game_action_asset | relative_url }}){:width="320" align="right"}
+{% for _action_shot in include.game.images.action_shots -%}
+{%   if forloop.last -%}
+{%     if forloop.first -%}
+{%       assign _align = "center" -%}
+{%     else -%}
+{%       assign _align = "right" -%}
+{%     endif -%}
+{%   else -%}
+{%     assign _align = "left" -%}
+{%   endif -%}
+![{{include.title}} {{_action_shot.title}}]({{ {{_action_shot.asset | relative_url }}){:width="320" align="{{_align}}"}
+{% endfor -%}
 </div>
