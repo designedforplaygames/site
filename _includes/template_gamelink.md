@@ -1,14 +1,12 @@
-{% capture game_action_asset %}assets/{{include.game.abbr}}_action.png{% endcapture %}
-{% capture game_box_asset %}assets/{{include.game.abbr}}_box.png{% endcapture %}
-{% capture game_shop_asset %}assets/{{include.game.abbr}}_shop.png{% endcapture %}
-{% capture game_unboxed_asset %}assets/{{include.game.abbr}}_unboxed.png{% endcapture %}
 <div class="row">
 ### [{{include.title}}]({{include.url | relative_url}})
 
+{% if include.game.images.logo != null -%}
 <div style="float:left">
-[![{{include.title}} Shop Logo]({{ game_shop_asset | relative_url }})]({{include.url | relative_url}})
 {: style="margin-right: 10px"}
+![{{include.title}} Logo]({{ include.game.images.logo | relative_url }})
 </div>
+{% endif -%}
 <div style="float:left">
 
 | Players | {{include.game.min_players}} - {{include.game.max_players}} |
