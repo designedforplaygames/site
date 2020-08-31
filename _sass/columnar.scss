@@ -1,0 +1,4 @@
+div.row:after { content: ""; display: table; clear: both; }
+div.columns.two { float: left; width: 48%; margin-right: 2%; }
+div.columns.three { float: left; width: 31%; margin-right: 2%; }
+div.columns.four { float: left; width: 23%; margin-right: 2%; }
