@@ -3,8 +3,8 @@
 </div>
 <div class="row">
 <div class="two columns">
-{% if include.game.images.logo != null -%}
-![{{include.title}} Shop Logo]({{ include.game.images.logo | relative_url }})
+{% if include.game.images.logo.asset != null -%}
+![{{include.title}}{% if include.game.images.logo.title != null %} {{include.game.images.logo.title}}{% endif %}]({{ include.game.images.logo.asset | relative_url }}){: {% if include.game.images.logo.display_width != null %}width="{{ include.game.images.logo.display_width }}" {% if include.game.images.logo.display_height != null %}height="{{ include.game.images.logo.display_height }}" }
 {% endif %}
 | Players | {{include.game.min_players}} - {{include.game.max_players}} |
 | Age | {{include.game.min_age}} + |
@@ -16,8 +16,8 @@
 
 </div>
 <div class="two columns">
-{% if include.game.images.blurb != null -%}
-![{{include.title}} Box]({{ include.game.images.blurb | relative_url }}){:align="right"}
+{% if include.game.images.blurb.asset != null -%}
+![{{include.title}}{% if include.game.images.blurb.title != null %} {{include.game.images.blurb.title}}{% endif %}]({{ include.game.images.blurb.asset | relative_url }}){:align="right" {% if include.game.images.blurb.display_width != null %}width="{{ include.game.images.blurb.display_width }}" {% if include.game.images.blurb.display_height != null %}height="{{ include.game.images.blurb.display_height }}" }
 {% endif -%}
 {{include.game.blurb}}
 </div>
@@ -33,6 +33,6 @@
 {%   else -%}
 {%     assign _align = "left" -%}
 {%   endif -%}
-![{{include.title}} {{_action_shot.title}}]({{ {{_action_shot.asset | relative_url }}){:width="320" align="{{_align}}"}
+![{{include.title}}{% if _action_shot.title != null %} {{_action_shot.title}}{% endif %}]({{ _action_shot.asset | relative_url }}){:align="right" {% if _action_shot.display_width != null %}width="{{ _action_shot.display_width }}" {% if _action_shot.display_height != null %}height="{{ _action_shot.display_height }}" }
 {% endfor -%}
 </div>
