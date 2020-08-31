@@ -3,11 +3,12 @@ game:
     status: "shelved"
     tgc_id: "danny-amoeba-at-paramecium-high"
     images:
-#     logo: "assets/rrrt_shop.png"
-#     blurb: "assets/rrrt_box.png"
-      action_shots:
-        - asset: "assets/danny-amoeba-at-paramecium-high-box.png"
-          title: Box Cover
+      logo:
+        asset: "assets/danny-amoeba-at-paramecium-high-box.png"
+        title: Box Cover
+        display_width: 160
+      blurb: {}
+      action_shots: []
     min_players: "3"
     max_players: "4"
     min_age: "12"
