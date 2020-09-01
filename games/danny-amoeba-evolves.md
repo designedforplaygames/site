@@ -29,5 +29,8 @@ game:
     type: "Worker placement and resource management game"
     blurb: "This will be a multi-stage game in which the players evolve from amoebas to multi-celled sea creatures, to land animals, to sentient beings.  The winner will be the player who gets into space first."
 title: "Danny Amoeba™ Evolves!"
+sidebar_link: true
+sidebar_sort_order: 500 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
+sidebar_category: shelved
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}
