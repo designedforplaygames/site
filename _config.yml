@@ -11,7 +11,7 @@ github_username:  designedforplaygames
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
-theme: minima
+remote_theme: fongandrew/hydeout
 
 timezone: America/Los_Angeles
 
