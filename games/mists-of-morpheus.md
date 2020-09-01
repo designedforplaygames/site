@@ -34,5 +34,8 @@ game:
 
         As the game is played, the players build the map over which Nekawa must traverse.  Traps and Monsters will appear on the map which Nekawa must either defeat or go around - but the only way to escape the map and go to the next level is to defeat three traps or monsters.  Each undefeated monster on the board increases Nekawa's Terror, as does losing a fight to some monsters and traps.  If Nekawa's terror level rises too high, he'll be trapped in the nightmare forever!
 title: "Mists of Morpheus"
+sidebar_link: true
+sidebar_sort_order: 500 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
+sidebar_category: shelved
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}
