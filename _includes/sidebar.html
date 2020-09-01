@@ -1,0 +1,16 @@
+<div id="sidebar">
+  <header>
+    <div class="site-title">
+      <a href="{{ "/" | relative_url }}">{%- if site.masthead.image -%}<img src="{{ site.masthead.image | relative_url }}"{% if site.masthead.width %} width="{{ site.masthead.width }}"{% endif %}{% if site.masthead.height %} height="{{ site.masthead.height }}"{% endif %}/>{%- endif -%}{{ site.title | escape }}</a>
+    </div>
+    <p class="lead">{{ site.description }}</p>
+  </header>
+  {% include sidebar-nav-links.html %}
+
+  {% if site.version %}
+    <span class="site-version">Currently v{{ site.version }}</span>
+  {% endif %}
+
+  {% include sidebar-icon-links.html %}
+  {% include copyright.html %}
+</div>
