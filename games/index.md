@@ -1,5 +1,7 @@
 ---
 title: games
+sidebar_link: true
+sidebar_sort_order: 100
 ---
 {% for status in "published"|split(",") %}
 {%   for child in site.pages -%}
