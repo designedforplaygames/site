@@ -1,6 +1,6 @@
 ---
 game:
-    status: "idea"
+    status: "shelved"
 #   tgc_id: "tgc-url-slug"
 #   images:
 #     logo:
