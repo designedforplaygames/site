@@ -36,5 +36,8 @@ game:
 
         Each role gives an advantage to one particular kind of player action.
 title: "Attack of the Radioactive (and Very Very Angry) Generic Giant Monster"
+sidebar_link: true
+sidebar_sort_order: 500 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
+sidebar_category: shelved
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}
