@@ -12,7 +12,7 @@
 | Age | {{include.game.min_age}} + |
 | Time | {{include.game.time_range}} |
 | Type | {{include.game.type}} |
-{% if include.game.status != "production" -%}
+{% if include.game.status != "published" -%}
 | Status | <span class="status {{include.game.status|slugify}}">{{ include.game.status }}</span> |
 {% endif %}
 {: width="50%"}
