@@ -17,6 +17,6 @@ game:
 title: "spods™"
 sidebar_link: true
 sidebar_sort_order: 500 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
-category: shelved
+sidebar_category: shelved
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}
