@@ -35,6 +35,6 @@
 {%   else -%}
 {%     assign _align = "left" -%}
 {%   endif -%}
-![{{include.title}}{% if _action_shot.title != null %} {{_action_shot.title}}{% endif %}]({{ _action_shot.asset | relative_url }}){:align="right" {% if _action_shot.display_width != null %}width="{{ _action_shot.display_width }}"{% endif %} {% if _action_shot.display_height != null %}height="{{ _action_shot.display_height }}"{% endif %} }
+![{{include.title}}{% if _action_shot.title != null %} {{_action_shot.title}}{% endif %}]({{ _action_shot.asset | relative_url }}){:align="{{_align}}" {% if _action_shot.display_width != null %}width="{{ _action_shot.display_width }}"{% endif %} {% if _action_shot.display_height != null %}height="{{ _action_shot.display_height }}"{% endif %} }
 {% endfor -%}
 </div>
