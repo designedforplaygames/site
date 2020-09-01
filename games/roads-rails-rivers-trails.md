@@ -25,6 +25,6 @@ game:
 title: "Roads and Rails, Rivers and Trails"
 sidebar_link: true
 sidebar_sort_order: 200 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
-category: published
+sidebar_category: published
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}
