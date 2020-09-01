@@ -1,0 +1,33 @@
+---
+game:
+    status: "shelved|idea|testing|production"
+    tgc_id: "tgc-url-slug"
+    images:
+      logo:
+        asset: "logo-image-above-game-stats"
+        title: Logo
+        display_width: optional width in pixels
+        display_height: optional height in pixels
+      blurb:
+        asset: "image-next-to-blurb"
+        title: Image
+        display_width: optional width in pixels
+        display_height: optional height in pixels
+      action_shots:
+        - asset: "action-shot"
+          title: Action Shot Name
+          display_width: optional width in pixels
+          display_height: optional height in pixels
+        - asset: "action-shot"
+          title: Action Shot Name
+          display_width: optional width in pixels
+          display_height: optional height in pixels
+    min_players: "..."
+    max_players: "..."
+    min_age: "..."
+    time_range: "...-... ..."
+    type: "..."
+    blurb: "..."
+title: "..."
+---
+{% include template_game.md game=page.game title=page.title url=page.url %}

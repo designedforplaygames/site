@@ -1,6 +1,8 @@
+{% if include.game.tgc_id != null -%}
 <div>
 [_{% if include.game.status == "production" %}Purchase{% else %}Preview{% endif %} **{{include.title}}** at The Game Crafter_](https://www.thegamecrafter.com/games/{{include.game.tgc_id}})
 </div>
+{% endif -%}
 <div class="row">
 <div class="two columns">
 {% if include.game.images.logo.asset != null -%}
@@ -33,6 +35,6 @@
 {%   else -%}
 {%     assign _align = "left" -%}
 {%   endif -%}
-![{{include.title}}{% if _action_shot.title != null %} {{_action_shot.title}}{% endif %}]({{ _action_shot.asset | relative_url }}){:align="right" {% if _action_shot.display_width != null %}width="{{ _action_shot.display_width }}"{% endif %} {% if _action_shot.display_height != null %}height="{{ _action_shot.display_height }}"{% endif %} }
+![{{include.title}}{% if _action_shot.title != null %} {{_action_shot.title}}{% endif %}]({{ _action_shot.asset | relative_url }}){:align="{{_align}}" {% if _action_shot.display_width != null %}width="{{ _action_shot.display_width }}"{% endif %} {% if _action_shot.display_height != null %}height="{{ _action_shot.display_height }}"{% endif %} }
 {% endfor -%}
 </div>

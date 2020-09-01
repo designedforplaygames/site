@@ -3,13 +3,19 @@ game:
     status: "production"
     tgc_id: "roads-rails-rivers-trails"
     images:
-      logo: "assets/rrrt_shop.png"
-      blurb: "assets/rrrt_box.png"
+      logo:
+        asset: "assets/rrrt_shop.png"
+        title: Logo
+      blurb:
+        asset: "assets/rrrt_box.png"
+        title: Box
       action_shots:
         - asset: "assets/rrrt_unboxed.png"
           title: Unboxed
+          display_width: 320
         - asset: "assets/rrrt_action.png"
           title: In Play
+          display_width: 320
     min_players: "2"
     max_players: "4"
     min_age: "12"
