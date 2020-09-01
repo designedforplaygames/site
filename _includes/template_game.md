@@ -1,6 +1,8 @@
+{% if include.game.tgc_id != null -%}
 <div>
 [_{% if include.game.status == "production" %}Purchase{% else %}Preview{% endif %} **{{include.title}}** at The Game Crafter_](https://www.thegamecrafter.com/games/{{include.game.tgc_id}})
 </div>
+{% endif -%}
 <div class="row">
 <div class="two columns">
 {% if include.game.images.logo.asset != null -%}
