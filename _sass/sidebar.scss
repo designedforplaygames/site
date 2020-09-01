@@ -1,0 +1,6 @@
+.sidebar-category:before { content: "[ "; }
+.sidebar-category:after { content: " ]"; }
+.sidebar-category { margin-right: 2em; }
+.sidebar-category.active { margin-right: 2em; }
+#sidebar .page-link { margin-left: 2em; }
+#sidebar .active { font-weight: bold; }
