@@ -3,13 +3,13 @@ game:
     status: "idea"
 #   tgc_id: "tgc-url-slug"
     images:
-#     logo:
-#       asset: "logo-image-above-game-stats"
+      logo:
+        asset: "assets/checkered-flag.png"
 #       title: Logo
 #       display_width: optional width in pixels
 #       display_height: optional height in pixels
-      blurb:
-        asset: "assets/checkered-flag.png"
+#     blurb:
+#       asset: "image-next-to-blurb"
 #       title: Image
 #       display_width: optional width in pixels
 #       display_height: optional height in pixels
