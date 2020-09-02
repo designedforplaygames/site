@@ -1,8 +1,8 @@
 ---
 title: about
-sidebar_link: true
 sidebar_sort_order: 100
 sidebar_category: site
+sidebar_link_categories: site
 ---
 
 _**designed for play**_&trade; is a one-person game studio.  i currently have one game (self-)published, with several more either in testing or in the idea stage.
