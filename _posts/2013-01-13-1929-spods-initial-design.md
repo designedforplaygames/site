@@ -1,6 +1,7 @@
 ---
 title: "spods™ initial design"
 date: 2013-01-13 19:29
+categories: news development
 ---
 
 ![spods™ logo]({% link assets/spods_logo.png %}){:height="69" width="200"}

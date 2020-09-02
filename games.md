@@ -1,5 +1,8 @@
 ---
 title: games
+sidebar_link: true
+sidebar_sort_order: 150
+sidebar_category: site
 ---
 {% for status in "published"|split(",") %}
 {%   for child in site.pages -%}

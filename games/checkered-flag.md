@@ -32,5 +32,8 @@ game:
 
         Each player is a driver controlling a car racing around a circuit track.  Each turn, players decide how their car is going to move that turn, playing between 1 and 4 cards in a specific order to direct their car down the track.
 title: "Checkered Flag"
+sidebar_link: true
+sidebar_sort_order: 400 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
+sidebar_category: idea
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}
