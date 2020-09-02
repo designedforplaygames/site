@@ -21,6 +21,6 @@ i'm a unix system administrator by profession, but i hope to keep designing game
 {% comment %}
 The following lines each have two trailing spaces.  **these trailing spaces are important** to force line breaks after each line!
 {% endcomment %}
-the designed for play logo uses the [Henry Morgan Hand](https://www.dafont.com/henry-morgan-hand.font) font by Manfried Klein, available on dafont.com.  
-this site uses the [Syne](https://fonts.google.com/specimen/Syne) font family by Bonjour Monde and Lucas Descroix, available on Google Fonts.  
-the theme for this site is a highly customized version of the [Hydeout](https://github.com/fongandrew/hydeout) Jekyll theme.  
+the designed for play logo uses the [Henry Morgan Hand](https://www.dafont.com/henry-morgan-hand.font) font by Manfried Klein, available on [dafont.com](https://www.dafont.com).  
+this site uses the [Syne](https://fonts.google.com/specimen/Syne) font family by Bonjour Monde and Lucas Descroix, available on [Google Fonts](https://fonts.google.com).  
+the theme for this site is a customized version of the [Hydeout](https://github.com/fongandrew/hydeout) Jekyll theme.  
