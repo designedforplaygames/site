@@ -1,5 +1,5 @@
 ---
-title: games workshop
+title: notebook
 sidebar_link: true
 sidebar_sort_order: 180
 sidebar_category: site
