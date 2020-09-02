@@ -2,6 +2,8 @@
 title: "spods™ initial design"
 date: 2013-01-13 19:29
 categories: news development
+sidebar_category: news
+sidebar_link_categories: news site
 ---
 
 ![spods™ logo]({% link assets/spods_logo.png %}){:height="69" width="200"}

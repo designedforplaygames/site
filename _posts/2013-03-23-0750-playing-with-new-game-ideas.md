@@ -2,6 +2,8 @@
 title: "Playing with new game ideas"
 date: 2013-03-23 07:50
 categories: news idea
+sidebar_category: news
+sidebar_link_categories: news site
 ---
 The Game Crafter has a Miniatures contest, so I'm playing with a couple of ideas for it:
 
