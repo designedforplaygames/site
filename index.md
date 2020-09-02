@@ -5,7 +5,7 @@ sidebar_category: site
 sidebar_link_categories: site
 ---
 
-_**designed for play**_&trade; is a one-person game studio.  i currently have one game (self-)published, with several more either in testing or in the idea stage.
+**designed for play**&trade; is a one-person game studio.  i currently have one game (self-)published, with several more either in testing or in the idea stage.
 
 [@designedforplay](https://twitter.com/designedforplay)  
 [designedforplaygames@gmail.com](mailto:designedforplaygames@gmail.com)
