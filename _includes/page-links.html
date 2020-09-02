@@ -3,10 +3,15 @@
   `sidebar_category` is included in the comma-separated list of
   categories in the current page's `sidebar_link_categories`.
 {% endcomment %}
-{% assign _pages_list = site.pages | sort:"sidebar_sort_order" %}
+{% assign _pages_list = site.pages | sort: "sidebar_sort_order" %}
+{% assign _posts_list = site.posts | sort: "date" | reverse %}
 {% assign _page_categories = page.sidebar_link_categories | split: " " %}
 {% for _category in _page_categories %}
-  {% assign _category_pages = _pages_list | where: "sidebar_category", _category %}
+  {% if _category == 'news' %}
+    {% assign _category_pages = _posts_list %}
+  {% else %}
+    {% assign _category_pages = _pages_list | where: "sidebar_category", _category %}
+  {% endif %}
   {% for _category_page in _category_pages %}
     {% if forloop.first %}
       <span class="sidebar-category{% if page.sidebar_category == _category %} active{% endif %}">{{ _category }}</span>

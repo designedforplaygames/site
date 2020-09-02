@@ -2,6 +2,8 @@
 title: "Danny Amoeba™ at Paramecium High - more playtests"
 date: 2013-01-13 19:14
 categories: news testing
+sidebar_category: news
+sidebar_link_categories: news site
 ---
 Wow, this is only my second post and already I'm behind!
 
