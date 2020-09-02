@@ -23,8 +23,8 @@ game:
     type: "Tactical tile placement game"
     blurb: "Play your cards to build a shared network of roads and rails, rivers and trails.  Block your opponents while scoring paths for yourself - but don't foget about any of your own paths, or you'll be caught short at the end!"
 title: "Roads and Rails, Rivers and Trails"
-sidebar_link: true
 sidebar_sort_order: 200 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
 sidebar_category: published
+sidebar_link_categories: published site
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}

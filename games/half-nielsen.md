@@ -19,8 +19,8 @@ game:
 
       (This theme might change)
 title: "Half-Nielsen"
-sidebar_link: true
 sidebar_sort_order: 500 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
 sidebar_category: shelved
+sidebar_link_categories: testing idea shelved site
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}

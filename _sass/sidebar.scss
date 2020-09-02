@@ -1,6 +1,9 @@
+.sidebar-category { margin-right: 2em; font-size: 0.80rem; line-height: 1.00rem; }
+.sidebar-category.active { margin-right: 2em; }
 .sidebar-category:before { content: "[ "; }
 .sidebar-category:after { content: " ]"; }
-.sidebar-category { margin-right: 2em; }
-.sidebar-category.active { margin-right: 2em; }
+#sidebar { font-size: 0.90rem; line-height: 1.00rem; }
 #sidebar .page-link { margin-left: 2em; }
+#sidebar .page-link:before { margin-left: -1.5ch; width: 1.5ch; display: inline-block; content: "\203A"; color: #666666; }
+#sidebar .page-link.active:before { color: #cc0000; }
 #sidebar .active { font-weight: bold; }

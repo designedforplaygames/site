@@ -1,8 +1,8 @@
 ---
-title: games workshop
-sidebar_link: true
+title: notebook
 sidebar_sort_order: 180
 sidebar_category: site
+sidebar_link_categories: testing idea shelved site
 ---
 {% assign _statuses = "testing=In Playtesting,idea=Idea Stage,shelved=On The Shelf" | split: "," -%}
 {% for _status_and_title in _statuses -%}
