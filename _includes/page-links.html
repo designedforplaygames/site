@@ -1,17 +1,16 @@
 {% comment %}
-  The code below dynamically generates a sidebar nav of pages with
-  `sidebar_link: true` in the front-matter. See readme for usage.
+  The code below dynamically generates a sidebar nav of pages whose
+  `sidebar_category` is included in the comma-separated list of
+  categories in the current page's `sidebar_link_categories`.
 {% endcomment %}
-{% assign pages_list = site.pages|sort:"sidebar_sort_order" %}
-{% for node in pages_list %}
-  {% if node.title != null %}
-    {% if node.sidebar_link %}
-      {% if node.sidebar_category != null and node.sidebar_category != pages_list_current_sidebar_category %}
-        {% assign pages_list_current_sidebar_category = node.sidebar_category %}
-	<span class="sidebar-category{% if page.sidebar_category == node.sidebar_category %} active{% endif %}">{{ node.sidebar_category }}</span>
-      {% endif %}
-      <a class="page-link {% if page.url == node.url %} active{% endif %}"
-          href="{{ node.url | relative_url }}">{{ node.title }}</a>
+{% assign _pages_list = site.pages | sort:"sidebar_sort_order" %}
+{% assign _page_categories = page.sidebar_link_categories | split: " " %}
+{% for _category in _page_categories %}
+  {% assign _category_pages = _pages_list | where: "sidebar_category", _category %}
+  {% for _category_page in _category_pages %}
+    {% if forloop.first %}
+      <span class="sidebar-category{% if page.sidebar_category == _category %} active{% endif %}">{{ _category }}</span>
     {% endif %}
-  {% endif %}
+    <a class="page-link {% if page.url == _category_page.url %} active{% endif %}" href="{{ _category_page.url | relative_url }}">{{ _category_page.title }}</a>
+  {% endfor %}
 {% endfor %}
