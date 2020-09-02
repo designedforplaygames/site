@@ -1,0 +1,7 @@
+<p>
+{% assign _copyright_start_date = site.copyright.start | default: site.time %}
+{% assign _copyright_start = _copyright_start_date | date: '%Y' %}
+{% assign _copyright_now = site.time | date: '%Y' %}
+  &copy; {% if _copyright_start != _copyright_now %}{{ _copyright_start }} &mdash; {% endif %}{{ _copyright_now }}{% if site.copyright.by or site.author %} {{ site.copyright.by | default: site.author }}{% endif %}<br/>
+  {% if site.license.file == null or site.license.file %}<a href="{{ (site.license.file | default: "/LICENSE.md") | relative_url }}">{% endif %}{{ site.license.type | default: "MIT License" }}{% if site.license.file == null or site.license.file %}</a>{% endif %}.
+</p>
