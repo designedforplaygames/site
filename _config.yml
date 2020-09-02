@@ -5,6 +5,14 @@ masthead:
 author: johnson earls
 email: designedforplaygames@gmail.com
 
+copyright:
+  by: johnson earls
+  start: 2012-12-02
+
+license:
+  type: "All rights reserved"
+  file: false
+
 # social links
 twitter_username: designedforplay
 github_username:  designedforplaygames
