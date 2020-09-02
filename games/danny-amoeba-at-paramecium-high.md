@@ -16,8 +16,8 @@ game:
     type: "Strategy board/card game"
     blurb: "In this game, each player plays an amoeba going to high school at Paramecium High.  In order to succeed, you need to keep up both your academic gradeas as well as your social standing - and hope you don't fall too far behind during summer vacation!"
 title: "Danny Amoeba™ at Paramecium High"
-sidebar_link: true
 sidebar_sort_order: 500 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
 sidebar_category: shelved
+sidebar_link_categories: testing idea shelved site
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}
