@@ -1,7 +1,10 @@
 ---
 title: "..."
 date: YYYY-MM-DD HH:MM
+categories: news ...
+sidebar_category: news
+sidebar_link_categories: news site
 ---
 ...
-![image alt text](assets/image_filename.png){:height="yyy" width="xxx"}
+![image alt text]({% link assets/image_filename.png %}){:height="yyy" width="xxx"}
 ...
