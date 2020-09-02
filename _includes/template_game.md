@@ -1,6 +1,6 @@
 {% if include.game.tgc_id != null -%}
 <div>
-[_{% if include.game.status == "production" %}Purchase{% else %}Preview{% endif %} **{{include.title}}** at The Game Crafter_](https://www.thegamecrafter.com/games/{{include.game.tgc_id}})
+[_{% if include.game.status == "published" %}Purchase{% else %}Preview{% endif %} **{{include.title}}** at The Game Crafter_](https://www.thegamecrafter.com/games/{{include.game.tgc_id}})
 </div>
 {% endif -%}
 <div class="row">
@@ -12,7 +12,7 @@
 | Age | {{include.game.min_age}} + |
 | Time | {{include.game.time_range}} |
 | Type | {{include.game.type}} |
-{% if include.game.status != "production" -%}
+{% if include.game.status != "published" -%}
 | Status | <span class="status {{include.game.status|slugify}}">{{ include.game.status }}</span> |
 {% endif %}
 
