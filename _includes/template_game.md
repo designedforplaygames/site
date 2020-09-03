@@ -13,7 +13,7 @@
 | Time | {{include.game.time_range}} |
 | Type | {{include.game.type}} |
 {% if include.game.status != "published" -%}
-| Status | <span class="status {{include.game.status|slugify}}">{{ include.game.status }}</span> |
+| Status | <span class="status {{include.game.status|slugify}}">{{ site.game_statuses[include.game.status] }}</span> |
 {% endif %}
 
 </div>
