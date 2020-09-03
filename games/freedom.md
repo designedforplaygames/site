@@ -1,6 +1,6 @@
 ---
 game:
-    status: "idea"
+    status: "development"
     tgc_id: "freedom-building-the-next-space-station"
     images:
       logo:
@@ -30,7 +30,7 @@ game:
     blurb: "Work together to build the next international space station, but make sure you build more of it to claim international bragging rights!"
 title: "Freedom - building the next space station"
 sidebar_sort_order: 400 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
-sidebar_category: idea
-sidebar_link_categories: testing idea shelved site
+sidebar_category: development
+sidebar_link_categories: testing development idea shelved site
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}

@@ -1,6 +1,6 @@
 ---
 game:
-    status: "idea"
+    status: "development"
 #   tgc_id: "tgc-url-slug"
     images:
       logo:
@@ -41,7 +41,7 @@ game:
         finally, constructing buildings is the primary way to gain victory points:  when a building is constructed, it is added to the kingdom which contributed the most work into building it by dedicating workers (and beasts of burden) to the building's construction (this is the "competitive bidding" part of the game).  small and medium sized buildings have effects on the yearly management of the kingdom, and the large monuments give bonus victory points at the end of the game.
 title: "Babylonia"
 sidebar_sort_order: 400 # 200 = production, 300 = testing, 400 = idea, 500 = shelved
-sidebar_category: idea
-sidebar_link_categories: testing idea shelved site
+sidebar_category: development
+sidebar_link_categories: testing development idea shelved site
 ---
 {% include template_game.md game=page.game title=page.title url=page.url %}

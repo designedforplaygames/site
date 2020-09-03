@@ -2,22 +2,21 @@
 title: notebook
 sidebar_sort_order: 180
 sidebar_category: site
-sidebar_link_categories: testing idea shelved site
+sidebar_link_categories: testing development idea shelved site
 ---
-{% assign _statuses = "testing=In Playtesting,idea=Idea Stage,shelved=On The Shelf" | split: "," -%}
-{% for _status_and_title in _statuses -%}
-{%   assign _status_and_title_split = _status_and_title | split: "=" -%}
-{%   assign _title = _status_and_title_split[1] -%}
-{%   assign _status = _status_and_title_split[0] -%}
-{%   for child in site.pages -%}
-{%     if child.game.status == _status -%}
-{%       if _status != _last_status -%}
-{%         assign _last_status = _status -%}
+{% for _status_and_title in site.game_statuses -%}
+{%   assign _status = _status_and_title[0] -%}
+{%   assign _title = _status_and_title[1] -%}
+{%   if _status == 'published' -%}
+{%     continue -%}
+{%   endif -%}
+{%   assign _status_pages = site.pages | where_exp: "item": "item.game.status == _status" -%}
+{%   for child in _status_pages -%}
+{%     if forloop.first -%}
 
 ## {{ _title }}
 
-{%       endif -%}
-{%       include template_gamelink.md game=child.game title=child.title url=child.url %}
 {%     endif -%}
+{%     include template_gamelink.md game=child.game title=child.title url=child.url %}
 {%   endfor -%}
 {% endfor -%}

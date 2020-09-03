@@ -26,3 +26,11 @@ timezone: America/Los_Angeles
 
 kramdown:
   parse_block_html: true
+
+# for use in templates
+game_statuses:
+  published: Published
+  testing: Playtesting
+  development: In Development
+  idea: Idea Stage
+  shelved: On the Shelf
