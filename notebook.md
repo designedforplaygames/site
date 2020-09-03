@@ -2,7 +2,7 @@
 title: notebook
 sidebar_sort_order: 180
 sidebar_category: site
-sidebar_link_categories: testing idea shelved site
+sidebar_link_categories: testing development idea shelved site
 ---
 {% for _status_and_title in site.game_statuses -%}
 {%   assign _status = _status_and_title[0] -%}
