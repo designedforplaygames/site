@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" style="margin-left: 2rem">
 ### [{{include.title}}]({{include.url | relative_url}})
 
 {% if include.game.images.logo.asset != null -%}
