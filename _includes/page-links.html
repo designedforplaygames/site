@@ -14,7 +14,7 @@
   {% endif %}
   {% for _category_page in _category_pages %}
     {% if forloop.first %}
-      <span class="sidebar-category{% if page.sidebar_category == _category %} active{% endif %}">{{ _category }}</span>
+      <span class="sidebar-category{% if page.sidebar_category == _category %} active{% endif %}">{% if site.game_statuses contains _category %}{{ site.game_statuses[_category] }}{% else %}{{ _category }}{% endif %}</span>
     {% endif %}
     <a class="page-link {% if page.url == _category_page.url %} active{% endif %}" href="{{ _category_page.url | relative_url }}">{{ _category_page.title }}</a>
   {% endfor %}
