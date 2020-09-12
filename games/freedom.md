@@ -4,7 +4,7 @@ game:
     tgc_id: "freedom-building-the-next-space-station"
     images:
       logo:
-        asset: "assets/freedom-shop-ad.png"
+        asset: "assets/ShopAd.freedom-01.png"
 #       title: Logo
 #       display_width: optional width in pixels
 #       display_height: optional height in pixels
