@@ -18,7 +18,10 @@ license:
 twitter_username: designedforplay
 github_username:  designedforplaygames
 
-show_excerpts: true # set to false to remove excerpts on the homepage
+front_news:
+  excerpt_posts: 1
+  excerpt_days: 0
+  summary_months: 1
 
 remote_theme: fongandrew/hydeout
 
