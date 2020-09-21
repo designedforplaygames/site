@@ -20,7 +20,7 @@ github_username:  designedforplaygames
 
 front_news:
   excerpt_posts: 1
-  excerpt_days: 0
+# excerpt_days: 0
   summary_months: 1
 
 remote_theme: fongandrew/hydeout
